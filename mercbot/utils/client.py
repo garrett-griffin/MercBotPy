@@ -4,9 +4,11 @@ from pymerc.client import Client
 def load_clients(api_user: str, api_token: str, api_nicknames: str) -> dict:
     clients = {}
 
-    if not api_user.startswith("[") and not api_token.startswith("["):
-        api_user = "[" + api_user + "]"
-        api_token = "[" + api_token + "]"
+    if not api_user.startswith("["):
+        api_user = f'["{api_user}"]'
+
+    if not api_token.startswith("["):
+        api_token = f'["{api_token}"]'
 
     if not api_user.startswith("[") or not api_token.startswith("["):
         raise ValueError("Invalid API user or token")

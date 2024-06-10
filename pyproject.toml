@@ -17,6 +17,7 @@ python-dotenv = "^1.0.1"
 pymerc = {git = "https://github.com/garrett-griffin/pymerc"}
 pytest = "^8.2.2"
 apscheduler = "^3.10.4"
+pytest-asyncio = "^0.23.7"
 
 
 [build-system]

@@ -1,37 +1,50 @@
 import os
-import pytest
-import sqlite3
 import json
-from mercbot.setup.initialize import initialize_settings
-from mercbot.models.settings import load_settings
+import asyncio
+from pymerc.game.player import Player
+from mercbot.utils.client import load_clients
+from mercbot.models.settings import save_settings
+from dotenv import load_dotenv
 
-DATABASE_PATH = os.path.join(os.path.dirname(__file__), '../data/mercbot.db')
+async def initialize_settings(api_nicknames, api_user, api_token):
+    load_dotenv()
 
-@pytest.fixture
-def setup_database():
-    if os.path.exists(DATABASE_PATH):
-        os.remove(DATABASE_PATH)
-    conn = sqlite3.connect(DATABASE_PATH)
-    cursor = conn.cursor()
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS settings (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nickname TEXT NOT NULL,
-        production_chains TEXT NOT NULL
-    )
-    ''')
-    conn.commit()
-    conn.close()
-    yield
-    os.remove(DATABASE_PATH)
+    if not api_nicknames.startswith("["):
+        api_nicknames = "[" + api_nicknames + "]"
 
-@pytest.mark.asyncio
-async def test_initialize_settings(setup_database):
-    api_user = '["test_user"]'
-    api_token = '["test_token"]'
-    api_nicknames = '["test_nickname"]'
+    print(f"{api_nicknames}")
 
-    await initialize_settings(api_nicknames, api_user, api_token)
-    settings = load_settings("test_nickname")
-    assert settings is not None
-    assert isinstance(settings, dict)
+    nicknames = json.loads(api_nicknames)
+    clients = load_clients(api_user, api_token, api_nicknames)
+
+    for nickname in nicknames:
+        client = clients[nickname]
+        player = Player(client)
+        await player.load()
+
+        production_chains = {}
+        for building in player.buildings:
+            if building.production:
+                recipe = str(building.production.recipe)  # Convert recipe to string
+                if recipe not in production_chains:
+                    production_chains[recipe] = []
+                production_chains[recipe].append({
+                    "building_id": building.id,
+                    "size": building.size,
+                    "target": building.production.target
+                })
+
+        save_settings(nickname, production_chains)
+        print(f"Settings for {nickname} initialized and saved to database.")
+
+if __name__ == "__main__":
+    load_dotenv()
+    api_user = os.getenv("BOT_USER")
+    api_token = os.getenv("BOT_TOKEN")
+    api_nicknames = os.getenv("BOT_NICKNAMES")
+
+    api_user = api_user
+    api_token = api_token
+    api_nicknames = api_nicknames
+
+    asyncio.run(initialize_settings(api_nicknames, api_user, api_token))
