@@ -3,7 +3,7 @@ import os
 import json
 from dotenv import load_dotenv
 from mercbot.utils.client import load_clients
-from mercbot.models.settings import load_settings
+from mercbot.models.settings import load_settings_to_db
 from mercbot.utils.production import optimize_production, manage_resources
 from mercbot.utils.market import analyze_market
 
@@ -22,7 +22,7 @@ async def main():
         await player.load()
 
         # Load settings from the database
-        settings = load_settings(nickname)
+        settings = load_settings_to_db(nickname)
 
         # Optimize production
         await optimize_production(player)
