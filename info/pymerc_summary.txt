@@ -1,0 +1,268 @@
+examples/inventory_report.py
+ItemReport
+generate_report(player, target_item) -> ItemReport
+
+pymerc/client.py
+Client
+  __init__(self, user, token) -> None
+
+pymerc/api/base.py
+BaseAPI
+  __init__(self, client) -> None
+
+pymerc/game/building.py
+Building
+  __init__(self, client, player, id) -> None
+  building_operation(self) -> Optional - Returns the building operation.
+  flows(self) -> Optional - Returns the flows of the building.
+  inventory(self) -> Optional - Returns the inventory of the building.
+  items(self) -> Optional - Returns the items in the building's storage.
+  operation(self) -> Optional - Returns the operation of the building.
+  operations(self) -> Optional - Returns the operations of the building.
+  managers(self) -> dict - The managers of the building.
+  previous_flows(self) -> Optional - The flows of the building.
+  production(self) -> Optional - Returns the production of the building.
+  production_flows(self) -> Optional - Returns the production flows of the building.
+  size(self) -> Optional - Returns the size of the building.
+  target_production(self) -> Optional - Returns the production target of the building.
+  type(self) -> common.BuildingType - Returns the type of the building.
+  under_construction(self) -> bool - Returns whether the building is under construction.
+  upgrades(self) -> Optional - Returns the upgrades installed for the building.
+  flow(self, item) -> Optional - Get the flow of an item in the building.
+  item(self, item) -> Optional - Get an item in the building.
+  manager(self, item) -> Optional - Get the manager of an item in the building.
+BuildingsList
+  by_id(self, id) -> Optional - Get a building by its ID.
+  by_type(self, type) -> BuildingsList - Get all buildings of a certain type.
+
+pymerc/game/exports.py
+Export
+  market_data(self) -> TownMarketItem - The market data for the export.
+  flowed(self) -> int - How much of the import flowed in the last turn.
+  value(self) -> float - The value of the export if it was sold at max price.
+  value_flowed(self) -> float - The value of the export that flowed in the last turn.
+  volume(self) -> int - The volume of the export if it was sold at max volume.
+  volume_flowed(self) -> int - The volume of the export that flowed in the last turn.
+Exports
+  flowed(self) -> Exports - The exports that flowed in the last turn.
+  value(self) -> float - The total value of all exports if they were sold at max price.
+  value_flowed(self) -> float - The total value of all exports that flowed in the last turn.
+  volume(self) -> int - The total volume of all exports if they were sold at max volume.
+  volume_flowed(self) -> int - The total volume of all exports that flowed in the last turn.
+ExportsList
+  flowed(self) -> ExportsList - The exports that flowed in the last turn.
+  value(self) -> float - The total value of all exports if they were sold at max price.
+  value_flowed(self) -> float - The total value of all exports that flowed in the last turn.
+  volume(self) -> int - The total volume of all exports if they were sold at max volume.
+  volume_flowed(self) -> int - The total volume of all exports that flowed in the last turn.
+  by_town_id(self, id) -> ExportsList - Returns the exports for a town by id.
+  by_town_name(self, name) -> ExportsList - Returns the exports for a town by name.
+ExportsSummed
+  flowed(self) -> ExportsSummed - The exports that flowed in the last turn.
+  value(self) -> float - The total value of all exports if they were sold at max price.
+  value_flowed(self) -> float - The total value of all exports that flowed in the last turn.
+  volume(self) -> int - The total volume of all exports if they were sold at max volume.
+  volume_flowed(self) -> int - The total volume of all exports that flowed in the last turn.
+  by_town_id(self, town_id) -> ExportsSummed - Returns the exports for a town by id.
+  by_town_name(self, town_name) -> ExportsSummed - Returns the exports for a town by name.
+
+pymerc/game/imports.py
+Import
+  cost(self) -> float - The cost of the import if it was bought at max price.
+  cost_flowed(self) -> float - The cost of the import that flowed in the last turn.
+  flowed(self) -> int - How much of the import flowed in the last turn.
+  market_data(self) -> TownMarketItem - The market data for the import.
+  volume(self) -> int - The volume of the import if it was bought at max volume.
+  volume_flowed(self) -> int - The volume of the import that flowed in the last turn.
+Imports
+  cost(self) -> float - The total cost of all imports if they were bought at max price.
+  cost_flowed(self) -> float - The total cost of all imports that flowed in the last turn.
+  flowed(self) -> Imports - The imports that flowed in the last turn.
+  volume(self) -> int - The total volume of all imports if they were bought at max volume.
+  volume_flowed(self) -> int - The total volume of all imports that flowed in the last turn.
+ImportsList
+  cost(self) -> float - The total cost of all imports if they were bought at max price.
+  cost_flowed(self) -> float - The total cost of all imports that flowed in the last turn.
+  flowed(self) -> ImportsList - The imports that flowed in the last turn.
+  volume(self) -> int - The total volume of all imports if they were bought at max volume.
+  volume_flowed(self) -> int - The total volume of all imports that flowed in the last turn.
+  by_town_id(self, town_id) -> ImportsList - Returns the imports for a town by id.
+  by_town_name(self, town_name) -> ImportsList - Returns the imports for a town by name.
+ImportsSummed
+  cost(self) -> float - The total cost of all imports if they were bought at max price.
+  cost_flowed(self) -> float - The total cost of all imports that flowed in the last turn.
+  flowed(self) -> ImportsSummed - The imports that flowed in the last turn.
+  volume(self) -> int - The total volume of all imports if they were bought at max volume.
+  volume_flowed(self) -> int - The total volume of all imports that flowed in the last turn.
+  by_town_id(self, town_id) -> ImportsSummed - Returns the imports for a town by id.
+  by_town_name(self, town_name) -> ImportsSummed - Returns the imports for a town by name.
+
+pymerc/game/operation.py
+BuildingOperation
+  __init__(self, client, player, building_id) -> None
+  building(self) -> Optional - The building associated with the operations.
+  total_flow(self) -> Optional - The total flow of the building.
+BuildingOperationList
+  by_building_id(self, building_id) -> BuildingOperation - Get all operations associated with a building.
+  by_item_input(self, item) -> OperationsList - Get all operations that take an item as input.
+  by_item_output(self, item) -> OperationsList - Get all operations that output an item.
+BuildingOperationsDict
+  by_building_type(self, building_type) -> OperationsList - Get all operations associated with a building type.
+  by_item_input(self, item) -> OperationsList - Get all operations that take an item as input.
+  by_item_output(self, item) -> OperationsList - Get all operations that output an item.
+Operation
+  __init__(self, client, player, building_operation, operation) -> None
+  building(self) -> Optional - The building associated with the operation.
+  building_id(self) -> int - The ID of the building this operation is associated with.
+  inputs(self) -> dict - The inputs of the operation.
+  outputs(self) -> dict - The outputs of the operation.
+OperationsList
+  inputs(self) -> dict - The inputs of all operations.
+  outputs(self) -> dict - The outputs of all operations.
+  by_building_id(self, building_id) -> OperationsList - Get all operations associated with a building.
+
+pymerc/game/player.py
+Player
+  __init__(self, client) -> None
+  household(self) -> Household - The household of the player.
+  money(self) -> float - The amount of money the player has.
+  prestige(self) -> float - The prestige of the player.
+  sustenance(self) -> Sustenance - The sustenance of the player.
+  sustenance_cost(self) -> float - The cost of the player's sustenance.
+  sustenance_items(self) -> list - The items currently being consumed by the player's sustenance.
+  sustenance_item_consumption(self, item) -> float - The amount of an item consumed by the player's sustenance.
+  sustenance_item_cost(self, item) -> float - The cost of an item consumed by the player's sustenance.
+
+pymerc/game/recipe.py
+Recipe
+  __init__(self, client, recipe) -> None
+  inputs(self) -> dict - The inputs of the recipe.
+  outputs(self) -> dict - The outputs of the recipe.
+  labour(self) -> float - Calculates the labor required for the recipe.
+  calculate_target_labor(self, target, inventory_assets, inventory_managers) -> float - Calculates the labor required for the given target multiplier.
+
+pymerc/game/storehouse.py
+Storehouse
+  __init__(self, client, player) -> None
+  flows(self) -> dict - The flows of the storehouse.
+  id(self) -> int - The id of the storehouse.
+  operations(self) -> OperationsList - The operations of the storehouse.
+  previous_flows(self) -> dict - The previous flows of the storehouse.
+  update_account(self, account) -> None - Update an account in the storehouse.
+  _load_inventory(self) -> None - Load the inventory of the storehouse.
+StorehouseItem
+  average_cost(self) -> float - The average cost of the item across production, imports, and purchases.
+  balance(self) -> int - The current balance of the item.
+  capacity(self) -> int - The maximum capacity of the item.
+  consumed(self) -> float - The amount of the item consumed.
+  consumption_cost(self) -> float - The cost of consuming the item.
+  exported(self) -> int - The amount of the item exported.
+  export_value(self) -> float - The value of the item exported if all items were sold at max price.
+  export_value_flowed(self) -> float - The value of the item exported based on the actual volume sold and prices received.
+  export_volume(self) -> int - The volume of the item exported if all items were sold at max price.
+  export_volume_flowed(self) -> int - The actual volume of the item exported.
+  imported(self) -> int - The amount of the item imported.
+  import_cost(self) -> float - The cost of importing the item if all items were bought at max price.
+  import_cost_flowed(self) -> float - The cost of importing the item based on the actual volume bought and prices paid.
+  import_volume(self) -> int - The volume of the item imported if all items were bought at max price.
+  import_volume_flowed(self) -> int - The actual volume of the item imported.
+  market_data(self) -> TownMarketItem - The market data for the item.
+  sold(self) -> int - The amount of the item sold.
+  sale_value(self) -> float - The value of the item sold if all items were sold at max price.
+  produced(self) -> float - The amount of the item produced.
+  production_cost(self) -> float - The cost of producing the item.
+  purchased(self) -> int - The amount of the item purchased.
+  purchased_cost(self) -> float - The cost of purchasing the item.
+
+pymerc/game/town.py
+Town
+  __init__(self, client, id) -> None
+  commoners(self) -> models.TownCommoners - The commoners in the town.
+  demands(self) -> list - The demands of commoners in the town.
+  market(self) -> dict - The market data for the town.
+  name(self) -> str - The name of the town.
+  structures(self) -> dict - The structures in the town.
+  total_satisfaction(self) -> int - The percent satisfaction of the town across all categories.
+  total_structures(self) -> int - The total number of structures in the town.
+  total_taxes(self) -> int - The total taxes collected by the town.
+  item(self, item) -> Optional - Get an item from the market.
+
+pymerc/game/transport.py
+Transport
+  __init__(self, client, player, id) -> None
+  docked(self) -> bool - Whether the transport is docked.
+  inventory(self) -> common.Inventory - The inventory of the transport.
+  market(self) -> Optional - The market of the transport.
+  route(self) -> TransportRoute - The route of the transport.
+  route_item(self, item) -> Optional - Returns the route data for the item, if it exists.
+  update_route(self, route) -> None - Updates the route of the transport.
+  _load_imports_exports(self) -> None - Loads the imports and exports for the transport.
+TransportList
+  by_town_name(self, name) -> TransportList - Filters the transports by the town name.
+  search_markets(self, item) -> list - Searches the markets for the item.
+TownItem
+  __init__(self, item, asset, town) -> None
+  fetch_details(self) -> TownMarketItemDetails - Fetches the details for the item from the town's market.
+
+pymerc/util/data.py
+convert_floats_to_strings(d) -> None - Convert floats in a dictionary to strings.
+
+pymerc/util/towns.py
+calculate_town_satisfaction(data) -> None - Calculate the satisfaction of a town.
+sum_town_structures(data) -> None - Sum the structures in a town.
+sum_town_taxes(data) -> None - Sum the taxes collected by a town.
+
+pymerc/api/models/common.py
+Asset
+BuildingType
+BuildingUpgradeType
+Climate
+Item
+ItemType
+Recipe
+Skill
+SkillLevel
+Transport
+Location
+Inventory
+  items(self) -> dict - The items in the inventory.
+InventoryAccount
+InventoryAccountAsset
+  purchased(self) -> bool - Whether the asset was purchased.
+  sold(self) -> bool - Whether the asset was sold.
+  total_purchase(self) -> float - The total purchase cost of the asset.
+  total_sale(self) -> float - The total sale cost of the asset.
+  total_value(self) -> float - The total value of the asset.
+InventoryManager
+  buying(self) -> bool - Whether the manager is buying.
+  max_buy_price(self) -> float - The maximum buy price of the manager.
+  max_sell_price(self) -> float - The maximum sell price of the manager.
+  selling(self) -> bool - Whether the manager is selling.
+InventoryFlow
+DeliveryCost
+Operation
+  surplus(self) -> float - The surplus of the operation.
+  shortfall(self) -> float - The shortfall of the operation.
+Path
+Producer
+ItemTrade
+ItemTradeResult
+ItemTradeSettlement
+
+pymerc/api/models/towns.py
+Town
+TownData
+TownDomain
+TownDomainStructure
+TownCommoners
+  demands(self) -> list - The demands of the commoners.
+TownDemandCategory
+TownDemand
+TownGovernment
+TownGovernmentTaxes
+TownChurch
+TownCulture
+TownMarket
+TownMarketItem
+TownMarketItemDetails
+ItemOrder

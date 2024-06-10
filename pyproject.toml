@@ -5,12 +5,18 @@ description = ""
 authors = ["Garrett Griffin-Morales <grgisme@gmail.com>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+initialize-settings = "mercbot.init_settings:main"
+run-bot = "mercbot.bot:main"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 pydantic = "^2.7.3"
 aiohttp = "^3.9.5"
 python-dotenv = "^1.0.1"
 pymerc = {git = "https://github.com/garrett-griffin/pymerc"}
+pytest = "^8.2.2"
+apscheduler = "^3.10.4"
 
 
 [build-system]
