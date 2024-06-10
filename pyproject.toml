@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "mercbot"
 version = "0.1.0"
-description = ""
+description = "MercBot is an intelligent automation tool for the online game Mercatorio. This bot aims to maximize prestige and profit for in-game characters by automating various gameplay aspects, including item balancing, production management, and market interactions. The bot can handle multiple accounts and dynamically determine production chains based on available buildings and transports. Designed for flexibility and extensibility, MercBot leverages the pymerc library for game API interactions and includes robust settings management with SQLite database support."
 authors = ["Garrett Griffin-Morales <grgisme@gmail.com>"]
-readme = "README.md"
+license = "MIT"
 
 [tool.poetry.scripts]
 initialize-settings = "mercbot.init_settings:main"
@@ -20,5 +20,5 @@ apscheduler = "^3.10.4"
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

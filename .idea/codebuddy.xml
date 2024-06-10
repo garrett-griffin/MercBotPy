@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CodebuddyPersistentProjectState">
+    <option name="additionalOptionsVisible" value="true" />
+    <option name="autoFileSelection" value="true" />
+    <option name="promptHistory">
+      <list>
+        <option value="I want to setup a github action workflow using a yml file that will automatically setup a test environment and run the necessary tests. Please create the necessary folders and yml file." />
+      </list>
+    </option>
     <option name="selectedModel" value="codebuddy:GPT4_Omni_V6" />
+    <option name="ttsEnabled" value="false" />
   </component>
 </project>

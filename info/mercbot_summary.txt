@@ -1,0 +1,28 @@
+Below is a summary of the functions available to you in the various files in mercbot so far.
+
+mercbot/settings.py
+load_settings() -> None
+save_settings(settings) -> None
+
+mercbot/models/database.py
+get_connection() -> None
+initialize_database() -> None
+
+mercbot/models/settings.py
+save_settings(nickname, production_chains) -> None
+load_settings(nickname) -> None
+
+mercbot/utils/client.py
+load_clients(api_user, api_token, api_nicknames) -> dict
+
+mercbot/utils/market.py
+analyze_market_trends(market_data) -> None
+determine_pricing_strategy(trends) -> None
+
+mercbot/utils/production.py
+identify_production_chains(player) -> None
+calculate_efficiency(production_chain) -> None
+prioritize_chains(chains) -> None
+
+mercbot/utils/scheduler.py
+start_scheduler() -> None

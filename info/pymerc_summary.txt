@@ -1,3 +1,5 @@
+Below is an overview of the various functions available to you in the pymerc python package that this project is using.
+
 examples/inventory_report.py
 ItemReport
 generate_report(player, target_item) -> ItemReport
