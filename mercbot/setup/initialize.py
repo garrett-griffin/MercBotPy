@@ -8,6 +8,10 @@ from dotenv import load_dotenv
 
 async def initialize_settings(api_nicknames, api_user, api_token):
     load_dotenv()
+
+    if not api_nicknames.startswith('['):
+        api_nicknames = f'["{api_nicknames}"]'
+
     nicknames = json.loads(api_nicknames)
     clients = load_clients(api_user, api_token, api_nicknames)
 

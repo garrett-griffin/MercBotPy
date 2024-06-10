@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CodebuddyPersistentProjectState">
+    <option name="additionalOptionsVisible" value="true" />
+    <option name="autoFileSelection" value="true" />
+    <option name="promptHistory">
+      <list>
+        <option value="I want to setup a github action workflow using a yml file that will automatically setup a test environment and run the necessary tests. Please create the necessary folders and yml file." />
+        <option value="Why did this not run any tests?&#10;&#10;Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows&#10;&#10;(mercbot-py3.11) PS C:\Users\garre\PycharmProjects\mercbot&gt; poetry run python -m unittest discover tests&#10;&#10;----------------------------------------------------------------------&#10;Ran 0 tests in 0.000s&#10;&#10;OK&#10;(mercbot-py3.11) PS C:\Users\garre\PycharmProjects\mercbot&gt; &#10;" />
+      </list>
+    </option>
     <option name="selectedModel" value="codebuddy:GPT4_Omni_V6" />
+    <option name="ttsEnabled" value="false" />
   </component>
 </project>
