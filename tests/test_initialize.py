@@ -3,7 +3,7 @@ import json
 import asyncio
 from pymerc.game.player import Player
 from mercbot.utils.client import load_clients
-from mercbot.models.settings import save_settings
+from mercbot.models.settings import save_settings_to_db
 from dotenv import load_dotenv
 
 async def initialize_settings(api_nicknames, api_user, api_token):
@@ -34,7 +34,7 @@ async def initialize_settings(api_nicknames, api_user, api_token):
                     "target": building.production.target
                 })
 
-        save_settings(nickname, production_chains)
+        save_settings_to_db(nickname, production_chains)
         print(f"Settings for {nickname} initialized and saved to database.")
 
 if __name__ == "__main__":

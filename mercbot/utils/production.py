@@ -1,4 +1,33 @@
 from pymerc.game.player import Player
+from mercbot.models.settings import save_settings_to_db
+
+async def identify_production_chains(player: Player):
+    production_chains = {}
+
+    for building in player.buildings:
+        if building.production:
+            recipe = str(building.production.recipe)  # Convert recipe to string
+            if recipe not in production_chains:
+                production_chains[recipe] = []
+            production_chains[recipe].append({
+                "building_id": building.id,
+                "size": building.size,
+                "target": building.production.target
+            })
+
+    return production_chains
+
+async def update_production_chains(player: Player, nickname: str):
+    print("Entering update_production_chains")
+    production_chains = await identify_production_chains(player)
+    print(f"Identified production chains: {production_chains}")
+    try:
+        print(f"save_settings_to_db about to be called")
+        await save_settings_to_db(nickname, production_chains)  # Ensure this is awaited
+        print(f"save_settings_to_db called with: {nickname}, {production_chains}")
+        print(f"Production chains for {nickname} updated and saved to database.")
+    except Exception as e:
+        print(f"Exception in save_settings: {e}")
 
 async def produce_item(player: Player, item_name: str, amount: int, settings: dict):
     for recipe, buildings in settings.items():
