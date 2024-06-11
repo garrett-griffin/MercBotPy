@@ -6,7 +6,7 @@ from mercbot.utils.client import load_clients
 from mercbot.utils.production import update_production_chains
 from dotenv import load_dotenv
 
-async def initialize_settings(api_nicknames, api_user, api_token):
+async def initialize_settings(user_id, api_nicknames, api_user, api_token):
     load_dotenv()
 
     if not api_nicknames.startswith('['):
@@ -28,8 +28,6 @@ if __name__ == "__main__":
     api_token = os.getenv("BOT_TOKEN")
     api_nicknames = os.getenv("BOT_NICKNAMES")
 
-    api_user = api_user
-    api_token = api_token
-    api_nicknames = api_nicknames
+    user_id = 1  # Assuming we have a default user with id 1 for demonstration purposes
 
-    asyncio.run(initialize_settings(api_nicknames, api_user, api_token))
+    asyncio.run(initialize_settings(user_id, api_nicknames, api_user, api_token))
