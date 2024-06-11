@@ -32,9 +32,12 @@ This project is a quality-of-life tool for the game Mercatorio, designed to auto
    poetry run run-bot
    ```
 
+6. Apply database migrations:
+   ```sh
+   python manage.py makemigrations game_data
+   python manage.py migrate game_data
+   ```
+
 ## Development
 
 To add new dependencies, use:
-```sh
-poetry add <package-name>
-```

@@ -7,6 +7,8 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY')
+if not SECRET_KEY:
+    raise ValueError("The SECRET_KEY environment variable is not set")
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -15,7 +17,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dashboard',  # Add the dashboard application
+    # Add any other apps you have here
+    'dashboard',
+    'game_data',
 ]
 
 MIDDLEWARE = [
@@ -51,14 +55,15 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '../data/db.sqlite3'),  # Updated path
+        'NAME': os.path.join(BASE_DIR, 'data/db.sqlite3'),  # Updated path
     }
 }
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "dashboard", "static"),
 ]
 
 DEBUG = True
 ALLOWED_HOSTS = ['*']
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
