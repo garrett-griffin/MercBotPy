@@ -2,7 +2,7 @@ import pytest
 from flask import Flask
 from flask.testing import FlaskClient
 from unittest.mock import patch
-from webapp.app import app, get_production_chains
+from dashboard.app import app, get_production_chains
 
 @pytest.fixture
 def client():
@@ -10,7 +10,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-@patch('webapp.app.get_production_chains')
+@patch('dashboard.app.get_production_chains')
 def test_index(mock_get_production_chains, client: FlaskClient):
     mock_get_production_chains.return_value = [
         ('user1', '{"chain1": [{"building_id": 1, "size": 10, "target": 50}]}'),

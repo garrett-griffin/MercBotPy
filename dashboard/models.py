@@ -9,5 +9,6 @@ class Player(models.Model):
 
 class Setting(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    player = models.ForeignKey(Player, on_delete=models.CASCADE, null=True, blank=True)  # New field
     setting_key = models.CharField(max_length=255)
     setting_value = models.TextField()

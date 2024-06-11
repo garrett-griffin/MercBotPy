@@ -15,7 +15,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Add any other apps you have here
+    'dashboard',  # Add the dashboard application
 ]
 
 MIDDLEWARE = [
@@ -28,7 +28,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'webapp.urls'
+ROOT_URLCONF = 'dashboard.urls'
 
 TEMPLATES = [
     {
@@ -46,12 +46,12 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webapp.wsgi.application'
+WSGI_APPLICATION = 'dashboard.wsgi.application'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, '../data/db.sqlite3'),  # Updated path
     }
 }
 

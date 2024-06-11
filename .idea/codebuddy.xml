@@ -32,6 +32,9 @@
         <option value="now running the server gives me this error:&#10;&#10;C:\Users\garre\AppData\Local\pypoetry\Cache\virtualenvs\mercbot-7Fr1yhqX-py3.11\Scripts\python.exe C:\Users\garre\PycharmProjects\mercbot\webapp\manage.py runserver &#10;Performing system checks...&#10;&#10;Watching for file changes with StatReloader&#10;System check identified some issues:&#10;&#10;WARNINGS:&#10;?: (staticfiles.W004) The directory 'C:\Users\garre\PycharmProjects\mercbot\webapp\static' in the STATICFILES_DIRS setting does not exist.&#10;&#10;System check identified 1 issue (0 silenced).&#10;June 10, 2024 - 15:31:12&#10;Django version 4.2.13, using settings 'webapp.settings'&#10;Starting development server at http://127.0.0.1:8000/&#10;Quit the server with CTRL-BREAK.&#10;&#10;" />
         <option value="this project has both flask and django in the webapp. i only want django. please remove flask." />
         <option value="I want to use django ORM for the database stuff. I want to follow best practices and make sure we're compatible with whatever the best modules/addons for django are for things like authentication and stuff. What's our current list of database tables?" />
+        <option value="why do we have webapp and webapp\webapp&#10;&#10;should we have both? and is webapp the best name for the front end of this game assistant tool we're developing?" />
+        <option value="move the db.sqlite3 file into the data/ folder and update the dashboard/settings.py file and any other necessary file" />
+        <option value="the settings django model only stores settings for a user. let's make it so we can also have a setting apply to a specific player belonging to a user, so add a column to reference the player model" />
       </list>
     </option>
     <option name="selectedModel" value="codebuddy:GPT4_Omni_V6" />
