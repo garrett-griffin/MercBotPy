@@ -1,0 +1,1525 @@
+{
+"id": "200400279",
+"name": "Aderhampton",
+"location": {
+"x": 2004,
+"y": 279
+},
+"region": 2107,
+"center_ids": [
+200300278,
+200300279,
+200400278,
+200400279,
+200500278,
+200500279
+],
+"outposts": [
+{
+"location": {
+"x": 2041,
+"y": 264
+},
+"range": 20,
+"owner": "39252"
+}
+],
+"domain": {
+"197000276": {},
+"197000277": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197000278": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197000279": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197100276": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197100277": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197100278": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197100279": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200262": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200263": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200264": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200265": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200276": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200277": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead"
+}
+},
+"197200278": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197200279": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300262": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300263": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300264": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300265": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300276": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300277": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300278": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300279": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197300281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197300282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197300284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197300285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197300286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400262": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400263": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400264": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400265": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400276": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400277": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400278": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400279": {
+"owner_id": "52440",
+"structure": {
+"id": "197200277",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197400280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197400286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500262": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197500263": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead"
+}
+},
+"197500264": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197500265": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197500278": {
+"ask_price": "12"
+},
+"197500279": {
+"ask_price": "12"
+},
+"197500280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197500286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600262": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197600263": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197600264": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197600265": {
+"owner_id": "49736",
+"structure": {
+"id": "197500263",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197600266": {
+"ask_price": "12"
+},
+"197600279": {
+"ask_price": "12"
+},
+"197600280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197600286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700255": {
+"owner_id": "5334",
+"structure": {
+"id": "198500255",
+"type": "logging camp",
+"tags": [
+"E",
+"toolshed"
+]
+}
+},
+"197700263": {
+"ask_price": "12"
+},
+"197700264": {
+"ask_price": "12"
+},
+"197700265": {
+"ask_price": "12"
+},
+"197700266": {
+"ask_price": "12"
+},
+"197700267": {
+"ask_price": "12"
+},
+"197700279": {
+"ask_price": "12"
+},
+"197700280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197700286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800260": {
+"owner_id": "5334",
+"structure": {
+"id": "198400261",
+"type": "charcoal hut",
+"tags": [
+"E",
+"toolshed"
+]
+}
+},
+"197800264": {
+"ask_price": "12"
+},
+"197800265": {
+"ask_price": "12"
+},
+"197800266": {
+"ask_price": "12"
+},
+"197800267": {
+"ask_price": "12"
+},
+"197800268": {
+"ask_price": "12"
+},
+"197800277": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197800278": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197800279": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197800280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197800287": {
+"owner_id": "39776",
+"structure": {
+"id": "198400282",
+"type": "hunting lodge",
+"tags": [
+"E",
+"armsrack",
+"curing chamber"
+]
+}
+},
+"197800290": {
+"ask_price": "12"
+},
+"197900252": {
+"owner_id": "5334",
+"structure": {
+"id": "198500255",
+"type": "logging camp",
+"tags": [
+"E",
+"toolshed"
+]
+}
+},
+"197900253": {
+"owner_id": "5334",
+"structure": {
+"id": "198500255",
+"type": "logging camp",
+"tags": [
+"E",
+"toolshed"
+]
+}
+},
+"197900265": {
+"ask_price": "12"
+},
+"197900266": {
+"ask_price": "12"
+},
+"197900267": {
+"ask_price": "12"
+},
+"197900268": {
+"ask_price": "12"
+},
+"197900269": {
+"ask_price": "12"
+},
+"197900277": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197900278": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"197900279": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead"
+}
+},
+"197900280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"197900288": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"E",
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"197900289": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"E",
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"197900290": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"198000252": {
+"owner_id": "64086",
+"structure": {
+"id": "198300252",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198000253": {
+"owner_id": "64086",
+"structure": {
+"id": "198300252",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198000260": {
+"owner_id": "5334",
+"structure": {
+"id": "198600263",
+"type": "charcoal hut",
+"tags": [
+"E"
+]
+}
+},
+"198000266": {
+"ask_price": "12"
+},
+"198000267": {
+"ask_price": "12"
+},
+"198000268": {
+"ask_price": "12"
+},
+"198000269": {
+"ask_price": "12"
+},
+"198000270": {
+"ask_price": "12"
+},
+"198000277": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198000278": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198000279": {
+"owner_id": "53096",
+"structure": {
+"id": "197900279",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198000280": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000281": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000282": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000283": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000284": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000285": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000286": {
+"owner_id": "52440",
+"structure": {
+"id": "197700284",
+"type": "grain farm",
+"tags": [
+"C",
+"E",
+"toolshed",
+"plough house",
+"manure pit"
+]
+}
+},
+"198000287": {
+"ask_price": "12"
+},
+"198000288": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"E",
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"198000289": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"E",
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"198000290": {
+"owner_id": "52440",
+"structure": {
+"id": "197900290",
+"type": "pasture",
+"tags": [
+"E",
+"toolshed",
+"cowshed",
+"manure pit"
+]
+}
+},
+"198100251": {
+"owner_id": "64086",
+"structure": {
+"id": "198300252",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198100252": {
+"owner_id": "64086",
+"structure": {
+"id": "198300252",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+},
+"198100253": {
+"owner_id": "64086",
+"structure": {
+"id": "198300252",
+"type": "farmstead",
+"tags": [
+"E"
+]
+}
+}
+},
+"household_ids": [
+"21381",
+"20139",
+"26663",
+"18637",
+"27909",
+"41241",
+"45741",
+"43511",
+"32787",
+"23471",
+"42229"
+],
+"commoners": {},
+"government": {},
+"church": {},
+"navigation_zones": {},
+"special_markets": [
+"snekkja",
+"cog",
+"handcart",
+"tumbrel",
+"hulk"
+],
+"culture": {
+"Region": 2107,
+"Size": 198,
+"Salary": "1.861"
+},
+"_ts": 1718122207988378
+}

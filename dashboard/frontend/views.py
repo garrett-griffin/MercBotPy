@@ -3,7 +3,7 @@ from django.http import JsonResponse
 import logging
 
 from django.contrib.auth.models import User
-from dashboard.models import Player
+from dashboard.models import Account
 
 def get_production_chains():
     return [
